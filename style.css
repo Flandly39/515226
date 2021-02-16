@@ -1,0 +1,56 @@
+.box1 {
+    /*padding: 0.5em 1em;
+    margin: 2em 0;*/
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box2 {
+    font-weight: bold;
+    color: limegreen;/*文字色*/
+    background: palegreen;
+    border: solid 3px limegreen;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box2 p {
+  margin: 0;
+  padding: 0;
+}
+
+.box3 {
+    font-weight: bold;
+    color: gold;/*文字色*/
+    background: darkorange;
+    border: solid 3px gold;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+.box5 {
+    font-weight: bold;
+    color: cadetblue;/*文字色*/
+    background: teal;
+    border: solid 3px cadetblue;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box5 p {
+    margin: 0; 
+    padding: 0;
+}
+.box4 {
+    font-weight: bold;
+    color: black;/*文字色*/
+    background: grey;
+    border: solid 3px black;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.box4 p {
+    margin: 0; 
+    padding: 0;
+}

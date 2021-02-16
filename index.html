@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="apple-touch-icon" href="/icon.png">
+  <!--web clip-->
+  <link rel="icon" type="image/png" href="/icon.png">
+  <!--short cut icon-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/Republic/style.css">
+    <title>Republic</title>
+</head>
+
+<body>
+<p id = 'text'></p>
+<p id="country"></p>
+<p>
+軍事系：
+<select id="army" class="box2">
+ <option value="">　何もしない　</option>
+ <option value="1">造船</option>
+ <option value="2">侵攻軍動員命令</option>
+ <option value="3">国防軍動員命令</option>
+ <option value="4">ライフル製造</option>
+</select>
+　侵攻：
+<select id="value" class="box2">
+  <option value="">　平時宣言　</option>
+  <option value="1">01</option>
+  <option value="2">11</option>
+  <option value="3">21</option>
+  <option value="4">31</option>
+  <option value="5">41</option>
+  <option value="6">51</option>
+  <option value="7">61</option>
+  <option value="8">71</option>
+  <option value="9">02</option>
+  <option value="10">12</option>
+  <option value="11">22</option>
+  <option value="12">32</option>
+  <option value="13">42</option>
+  <option value="14">52</option>
+  <option value="15">62</option>
+  <option value="16">72</option>
+  <option value="17">03</option>
+  <option value="18">13</option>
+  <option value="19">23</option>
+  <option value="20">33</option>
+  <option value="21">43</option>
+  <option value="22">53</option>
+  <option value="23">63</option>
+  <option value="24">73</option>
+  <option value="25">04</option>
+  <option value="26">14</option>
+  <option value="27">24</option>
+  <option value="28">34</option>
+  <option value="29">44</option>
+  <option value="30">54</option>
+  <option value="31">64</option>
+  <option value="32">74</option>
+  <option value="33">05</option>
+  <option value="34">15</option>
+  <option value="35">25</option>
+  <option value="36">35</option>
+  <option value="37">45</option>
+  <option value="38">55</option>
+  <option value="39">65</option>
+  <option value="40">75</option>
+  <option value="41">06</option>
+  <option value="42">16</option>
+  <option value="43">26</option>
+  <option value="44">36</option>
+  <option value="45">46</option>
+  <option value="46">56</option>
+  <option value="47">66</option>
+  <option value="48">76</option>
+  <option value="49">07</option>
+  <option value="50">17</option>
+  <option value="51">27</option>
+  <option value="52">37</option>
+  <option value="53">47</option>
+  <option value="54">57</option>
+  <option value="55">67</option>
+  <option value="56">77</option>
+</select>
+政治系：
+<select id="politics" class="box4">
+ <option value="">　何もしない　</option>
+ <option value="login">方針を取得する</option>
+</select>
+<br>
+研究系：
+<select id="study" class="box5">
+  <option value="">　何もしない　</option>
+  <option value="1">　説明　</option>
+</select>
+外交系：
+<select id="diplomacy" class="box5">
+  <option value="">　何もしない　</option>
+  <option value="1">(黒)と国交を結ぶ</option>
+  <option value="2">(赤)と国交を結ぶ</option>
+  <option value="3">(黄)と国交を結ぶ</option>
+  <option value="4">(緑)と国交を結ぶ</option>
+  <option value="5">石油=鉄交易協定</option>
+  <option value="6">食料=鉄交易協定</option>
+  <option value="7">交易協定を離脱</option>
+</select>
+民事系：
+<select id="civil" class="box3">
+  <option value="">　何もしない　</option>
+  <option value="1">農場を建設</option>
+  <option value="2">人口を増やす</option>
+  <option value="3">精製施設を建設</option>
+  <option value="4">工場を建設</option>
+  <option value="5">義勇軍動員要請</option>
+  <option value="6">ライフル製造</option>
+</select>
+</p>
+<button onclick="決定();">決定</button>
+<div class="box1">
+  <p id="news">ここに文章</p>
+</div>
+<canvas id="main">※このブラウザは、対応していません。</canvas>
+<select id="app">
+  <option value="1">(水色の国)</option>
+  <option value="2">(黒色の国)</option>
+  <option value="3">(黄色の国)</option>
+  <option value="4">(赤色の国)</option>
+  <option value="5">(黄緑の国)</option>
+</select>
+<!--<p>音楽:魔王魂</p>
+<!--<script src='/music/music.js'></script>-->
+<script src='/Republic/data.js'></script>
+<script src='/Republic/motion.js' defer></script>
+<script src="/Republic/main.js" defer></script>
+</body>
+
+</html>
