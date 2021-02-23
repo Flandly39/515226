@@ -5,7 +5,7 @@ let text = canvas.getContext('2d');
 text.font = '8px serif';
 text.fillStyle = 'orange';
 color_block = new Image;
-color_block.src = '/515226/img/color_block.png';
+color_block.src = '/Republic/img/color_block.png';
 let T = document.getElementById('text');
 let news = document.getElementById('news');
 let country = document.getElementById('country'); //国の情報 "\n"は改行文字
@@ -33,6 +33,7 @@ let map = [
   [1, 1, 1, 1, 4, 4, 4, 4]
   ];
 let map_war; //motionの戦争に使う
+let politicsAI = 10;//ストーリー進展をカウントする。
 
 window.onload = function() {
   setInterval(function() { Timer() }, 33); //この行だけ引用
@@ -72,6 +73,13 @@ function Timer() {
       m++;
       s = 30;
       motion();
+      
+      for (let LostCost = 0; LostCost < 10; ++LostCost) {
+        if (data.army_population[LostCost] < 0) { //兵士のマイナスを防ぐ
+          data.army_population[LostCost] = 0;
+        }
+      }
+      
     } //時間
   }
   T.innerText = '次の月まで' + s + '日　' + m + 'ヶ月経過　';
